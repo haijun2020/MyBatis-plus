@@ -57,6 +57,11 @@ public class Employee {
         return "Employee [id=" + id + ", lastName=" + lastName + ", email=" + email
                 + ", gender=" + gender + ", age="
                 + age + "]";
+
+    }
+
+    public void test(){
+        System.out.println("测试！");
     }
 }
 

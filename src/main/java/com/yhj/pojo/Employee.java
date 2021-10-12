@@ -61,6 +61,7 @@ public class Employee {
     }
 
     public void test(){
+        System.out.println("github!");
         System.out.println("测试！");
     }
 }

@@ -1,11 +1,19 @@
 package com.yhj.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+
+import java.io.Serializable;
+
 /**
  * @Author: pc
  * @Date: 2021/10/12
  * @Description:
  **/
-public class Employee {
+@TableName("tbl_employee")
+public class Employee extends Model<Employee> {
+
+
     private Integer id;
     private String lastName;
     private String email;
@@ -63,6 +71,10 @@ public class Employee {
     public void test(){
         System.out.println("github!");
         System.out.println("测试！");
+    }
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
     }
 }
 
